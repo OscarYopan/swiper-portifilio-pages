@@ -1,3 +1,22 @@
+:root {
+  /*========== Colors ==========*/
+  /* HSL color mode */
+  --first-color: #6E57E0;
+  --first-color-alt: #5A43CB;
+  --first-color-lighter: #C1B6FC;
+  --text-color-light: #A19FAD;
+
+  /* Dark Theme */
+  --first-color-second: #100E1B;
+  --title-color: #F2F1F3;
+  --text-color: #BCBAC4;
+  --input-color: #211D35;
+  --body-color: #191627;
+  --container-color: #211D35;
+  --scroll-bar-color: #716C89;
+  --scroll-thumb-color: #545167;
+}
+
 html,
 body {
   position: relative;
@@ -28,9 +47,66 @@ body {
   background-size: cover;
   width: 600px;
   height: 400px;
+  position: relative;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
 }
 
 .swiper-slide iframe {
-  display: block;
+  height: 100%;
   width: 100%;
+}
+
+.swiper-slide .shade {
+  height: 40%;
+  width: 100%;
+  border: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(25, 22, 39, 0.6);
+}
+
+.swiper-slide .shade h5 {
+  font-size: 2rem;
+  color: var(--title-color);
+  text-align: left;
+  margin: 1rem;
+}
+
+.swiper-slide .shade p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 1rem;
+  text-align: left;
+}
+
+.swiper-slide .shade a {
+  text-decoration: none;
+  color: var(--first-color);
+}
+
+.swiper-slide .shade .icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+.swiper-slide .shade .icon .fa-desktop {
+  margin-right: 1rem;
+}
+
+.swiper-slide .shade .icon i:hover {
+  color: var(--text-color);
+}
+
+.swiper-slide .shade .icon i:active {
+  transform: scale(1.1);
 }
