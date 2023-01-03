@@ -1,0 +1,36 @@
+html,
+body {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 80%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 600px;
+  height: 400px;
+}
+
+.swiper-slide iframe {
+  display: block;
+  width: 100%;
+}
