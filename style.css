@@ -115,12 +115,11 @@ body {
 
   .swiper-slide .shade h5 {
     font-size: 16px;
-    text-align: center;
+    margin: .5rem;
   }
   
   .swiper-slide .shade p {
-    font-size: 14px;
-    text-align: center;
+    font-size: 12px;
   }
 
   .swiper-slide .shade .icon {
